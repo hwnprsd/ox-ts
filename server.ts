@@ -12,7 +12,7 @@ const wallet = new ethers.Wallet(privateKey!, provider);
 const app = express();
 const port = 1337;
 
-app.get("/cosign", (req: Request, res: Response) => {
+app.post("/cosign", (req: Request, res: Response) => {
   const hash = req.body.cosignerHash;
 
   const signature = ethers.utils.joinSignature(
