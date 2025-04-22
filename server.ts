@@ -9,6 +9,8 @@ const rpcUrl = process.env.RPC_URL;
 const provider = new ethers.providers.JsonRpcProvider(rpcUrl);
 const wallet = new ethers.Wallet(privateKey!, provider);
 
+console.log("using wallet", wallet.address);
+
 const app = express();
 app.use(express.json());
 
