@@ -1,0 +1,22 @@
+{
+  "name": "tsclient",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "npx ts-node server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.1",
+    "@uniswap/uniswapx-sdk": "^2.0.1-alpha.10",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
