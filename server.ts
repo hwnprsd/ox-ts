@@ -10,6 +10,8 @@ const provider = new ethers.providers.JsonRpcProvider(rpcUrl);
 const wallet = new ethers.Wallet(privateKey!, provider);
 
 const app = express();
+app.use(express.json());
+
 const port = 1337;
 
 app.post("/cosign", (req: Request, res: Response) => {
